@@ -8,9 +8,13 @@ $ npm install quote_generator
 ```
 
 ## Usage
-
+Generate quote:
 ```
 $ npm run generate
+```
+View stored quotes:
+```
+$ npm run view
 ```
 
 ## License
