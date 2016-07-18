@@ -15,7 +15,7 @@ exports.prompt = function(quote,author) {
     }
     else {
       exports.response = false;
-      console.log(existing);
+      console.log("\nOk!  Run 'generate' again to generate another quote or run 'view' to view the quotes you have stored!\n");
     }
     rl.close();
   });

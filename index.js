@@ -1,13 +1,13 @@
 var generator = require('./my_modules/generator');
 var async = require('async');
-var readline = require('readline');
 var first = true;
 let quote = generator.quote;
 let author = generator.author;
-var save = require('./my_modules/saveQuotes')
+var save = require('./my_modules/saveQuotes');
+var colors = require('colors');
 
-console.log("\nWelcome to Quote Generator!");
 generator.run;
+console.log("Welcome to Quote Generator!".bold);
 
 function isReady(nullCheck) {
   if (nullCheck === null || typeof nullCheck == 'undefined') {
@@ -20,7 +20,7 @@ function isReady(nullCheck) {
 
 function logging(callback) {
   if (first) {
-    console.log("\nLoading...please wait a moment while we generate your quote.");
+    console.log("\nLoading...".cyan.italic + "\nPlease wait a moment while your quote is generated.".cyan);
     first = false;
   }
   author = generator.author
@@ -29,9 +29,9 @@ function logging(callback) {
 };
 
 function ready(nullCheck) {
-  console.log("\n\nYour quote has been generated!");
-  console.log(`\nThis quote belongs to ${author}:`);
-  console.log(`\n${quote}\n--${author}\n`);
+  console.log("\nYour quote has been generated!".yellow);
+  console.log(`\n\nThis quote belongs to ${author}:`.underline);
+  console.log(`\n${colors.magenta(quote)}\n--${colors.italic(author)}\n`);
   save.prompt(quote,author);
 }
 
