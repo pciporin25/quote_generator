@@ -1,8 +1,10 @@
 var generator = require('./my_modules/generator');
 var async = require('async');
+var readline = require('readline');
 var first = true;
 let quote = generator.quote;
 let author = generator.author;
+var save = require('./my_modules/saveQuotes')
 
 console.log("\nWelcome to Quote Generator!");
 generator.run;
@@ -30,6 +32,7 @@ function ready(nullCheck) {
   console.log("\n\nYour quote has been generated!");
   console.log(`\nThis quote belongs to ${author}:`);
   console.log(`\n${quote}\n--${author}\n`);
+  save.prompt(quote,author);
 }
 
 async.until(isReady,logging,ready);
