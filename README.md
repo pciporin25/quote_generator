@@ -2,6 +2,9 @@
 > Simple quote generator using [QuoteDB](http://www.quotedb.com/) as a reference.
 
 ## Install
+```
+$ npm install quote_generator
+```
 
 ## Usage
 
