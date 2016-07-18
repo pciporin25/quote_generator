@@ -1,20 +1,24 @@
 {
-  "name": "quote_generator",
-  "version": "1.0.0",
-  "description": "generate quotes and save favorites",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "node index.js"
-  },
-  "dependencies": {
-    "async": "^2.0.0",
-    "request": "^2.73.0"
-  },
-  "keywords": [
-    "quote",
-    "generator"
-  ],
-  "author": "Peter Ciporin",
-  "license": "MIT"
+    "name": "quote_generator",
+    "version": "1.0.0",
+    "description": "simple quote generator",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "generate": "node index.js"
+    },
+    "dependencies": {
+        "async": "^2.0.0",
+        "request": "^2.73.0"
+    },
+    "keywords": [
+        "quote",
+        "generator"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pciporin25/quote_generator.git"
+    },
+    "author": "Peter Ciporin <pciporin@gmail.com>",
+    "license": "MIT"
 }

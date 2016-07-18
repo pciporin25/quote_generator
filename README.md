@@ -1,5 +1,5 @@
 # Quote Generator
-> Simple quote generator using QuoteDB (http://www.quotedb.com/)
+> Simple quote generator using [QuoteDB](http://www.quotedb.com/) as a reference.
 
 ## Install
 
@@ -10,4 +10,4 @@ $ npm run generate
 ```
 
 ## License
-MIT © [Peter Ciporin]
+MIT © [Peter Ciporin](https://www.linkedin.com/in/pciporin)

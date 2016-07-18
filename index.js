@@ -1,4 +1,4 @@
-var generator = require('./generator');
+var generator = require('./my_modules/generator');
 var async = require('async');
 var first = true;
 let quote = generator.quote;
